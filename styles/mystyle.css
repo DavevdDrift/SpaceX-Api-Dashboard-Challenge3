@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: Roboto;
+	color: white;
+	background-image: linear-gradient(#000920, #001B5B);
+	text-align: center;
+}
+
+#weather {
+	background-color: #222222;
+	width: 60px;
+	padding: 6px;
+	text-align: center;
+}
+
+.hidden {
+	display: none;
+}
+
+.grid-container{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-areas:
+	"box0"
+	"box1"
+	"box2";
+} 
+
+#logo{
+	grid-area: box0;
+}
+
+#kopje1{
+  	grid-area: box1;
+}
+
+#kopje2{
+  	grid-area: box2;
+}
+
+.grid-container{
+	margin: 0px;
+	left: 50%;
+} 
+
+
+h1{
+	line-height: 0.5;
+	font-size: 26px;
+	color: #00E0FF;
+}
+
+h2{
+	font-size: 20px;
+	margin-bottom: 0px;
+}
+
+#logo{
+	margin: 10px;
+}
+
+
+#kopje1{
+  	margin-top: 0px;
+}
+
+div.kopje2{
+  	float: left;
+  	margin-top: 30px;
+}
+
+#apod_explaination{
+	margin: 2%;
+	text-align: justify;
+}
+
+#apod_img_id{
+	border-radius: 10px;
+}
+
+
+
+*{
+	font-family: Roboto;
+}
+
+@media only screen and (min-width: 361px) {
+  
+html{
+	height: 100%;
+}
+
+#weather {
+	width: 600px;
+	padding: 6px;
+}
+
+h1{
+	line-height: 0.5;
+	font-size: 40px;
+}
+
+h2{
+	font-size: 30px;
+	margin-bottom: 0px;
+}
+
+.AfbeeldingLogo{
+	width: 310px
+}
+
+
+div.kopje1{
+  	margin-top: 20px;
+  	line-height: 1.5;
+}
+
+div.kopje2{
+  	float: left;
+  	margin-top: 40px;
+  	line-height: 1.5;
+}
+
+#apod_explaination{
+	margin: 2%;
+	margin-left: 20px;
+    margin-right: 20px;
+	font-size: 22px;
+	line-height: 1.5;
+}
+
+#apod_title{
+	font-size: 30px;
+}
+
+article{
+	font-size: 22px;
+}
+
+
+
+}
+
+@media only screen and (min-width: 769px) {
+
+.grid-container{
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas:
+	"box0 box0"
+	"box1 box3"
+	"box1 box3";
+}
+
+#weather1description{
+	margin-left: 50px;
+    margin-right: 50px;
+}
+
+div.kopje2{
+  	margin-top: 20px;
+}
+
+#apod_explaination{
+	font-size: 14px;
+	margin-left: 50px;
+    margin-right: 50px;
+}
+
+}
+
+}
